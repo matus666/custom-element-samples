@@ -1,0 +1,9 @@
+{
+  "title": "Shopify Product Selector",
+  "description": "Shopify product selector is a selector connected to Shopify Storefront which allows users to search and select a product from Shopify product catalog.",
+  "thumbnailUrl": "../assets/ShopifyProductSelector.gif",
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-shopify",
+  "categories": [
+    "eCommerce"
+  ]
+}

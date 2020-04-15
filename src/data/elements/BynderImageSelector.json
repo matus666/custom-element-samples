@@ -1,0 +1,9 @@
+{
+  "title": "Bynder Image Selector",
+  "description": "The Bynder Image Selector allows to search images in Bynder DAM and use them in your website.",
+  "thumbnailUrl": "../assets/BynderImageSelector.gif",
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-sample-bynder",
+  "categories": [
+    "Images"
+  ]
+}

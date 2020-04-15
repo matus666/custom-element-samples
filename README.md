@@ -1,87 +1,87 @@
-# Examples of Custom Element Extensions for Kentico Cloud
+# Examples of Custom Element Extensions for Kentico Kontent
 
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
+[![Gallery](https://img.shields.io/badge/-Gallery-brightgreen.svg)](https://kentico.github.io/kontent-custom-element-samples/gallery/)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
 
-This repository contains samples of the HTML web pages that can be used as Custom Element (BETA) Extensions in Kentico Cloud.
-
-[Custom elements](https://developer.kenticocloud.com/docs/integrating-content-editing-features) help you with extending the basic functionality of Kentico Cloud UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed <iframe> and interacts with the [Kentico Cloud](https://kenticocloud.com/) app via the [Custom Elements API](https://developer.kenticocloud.com/reference#custom-elements-api).
+[Custom elements](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features) help you with extending the basic functionality of Kentico Kontent UI and thus improving the content editing experience. Custom element is essentially a small HTML application that exists in a sandboxed `<iframe>` and interacts with the [Kentico Kontent](https://kontent.ai/) app via the [Custom Elements API](https://docs.kontent.ai/reference/custom-elements-js-api).
 
 Note that Custom elements are only supported in the latest versions of our SDKs.
 
-# Custom elements' samples overview
-## ColorPicker
-[ColorPicker](https://github.com/Kentico/custom-element-samples/blob/master/ColorPicker/color-picker.html) is a simple Custom element based on a [color-picker](https://github.com/tovic/color-picker) JavaScript library. It allows user to choose a color from palette and sets it as a HEX string, e.g. '#ff0000' for red color, '#00ff00' for green, and so on. Selected color is then seen as the Custom element's background. When the element is disabled, its color palette is still visible in a content item but does not react when clicked on.
+[![View Gallery](ViewGalleryButton.png)](https://kentico.github.io/kontent-custom-element-samples/gallery)
 
-## Markdown editor
-[Mardown editor](https://github.com/Kentico/custom-element-samples/blob/master/Markdown/markdown.html) is a WYSIWYG Custom element which allows users to write formatted text using [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor). In this sample element, you can find examples of setting dynamic height and reacting on the window 'resize' events. When the element is disabled, the editor is set to the readonly mode.
+## ⚠ Disclaimer
 
-# How to create a custom element
-You can find a detailed tutorial on how to create a Custom element in our [documentation](https://developer.kenticocloud.com/docs/integrating-content-editing-features).
+Any URLs provided in the repos should not be used in production. You should follow the steps provided in the custom element's repository to deploy it yourself for testing.
 
-## Custom element devkit
-To make development of custom elements as easy as possible, we created a [custom element devkit](https://github.com/Kentico/custom-element-devkit). The devkit includes Kentico Cloud alike wireframe and mocked API to enable seamless debugging experience. It is also capable of minimizing all assets and preparing custom element for production use.
+If a custom element is missing deploy instructions, or you're having trouble with them, please log an issue in the custom element's repository.
 
-## Styling your custom elements
+If you wish to use them in a production project, you should perform a code review and fork/deploy the source code on your own as the custom elements in this repository are subject to change without notice.
 
-By including Kentico Cloud default styles, you can make your Custom element look consistent with the rest of the UI.
+**NOTE:** Some of the custom elements may require further configuration such as custom API keys or be subject to CORS limitation. In those cases you will need to fork the source repository and adjust the configuration in your copy repository according to instructions in the element's README file.
 
-The [/shared](https://github.com/Kentico/custom-element-samples/tree/master/shared) folder in this GitHub repository contains:
+## How to create a custom element
 
-* [custom-element.css](https://github.com/Kentico/custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
-* [kentico-icons-v1.6.0.woff](https://github.com/Kentico/custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
-* [examples.html](https://github.com/Kentico/custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements. See also the link in Demo section.
+You can find a detailed tutorial on how to create a Custom element in our [documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features).
+
+### Styling your custom elements
+
+By including Kentico Kontent default styles, you can make your Custom element look consistent with the rest of the UI.
+
+The [/shared](https://github.com/Kentico/kontent-custom-element-samples/tree/master/shared) folder in this GitHub repository contains:
+
+* [custom-element.css](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/custom-element.css) – a CSS stylesheet
+* [kentico-icons-v1.6.0.woff](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/kentico-icons-v1.6.0.woff) – a font file
+* [examples.html](https://github.com/Kentico/kontent-custom-element-samples/blob/master/shared/examples.html) – An HTML page containing the implementation details and an HTML markup of some of the basic elements. See also the link in Demo section.
+  * showcase: [https://kentico.github.io/kontent-custom-element-samples/shared/examples.html](https://kentico.github.io/kontent-custom-element-samples/shared/examples.html)
 
 We recommend you clone the files and host them locally yourself. The `kentico-icons-v1.6.0.woff` file needs to be hosted in the same directory as the CSS stylesheet to be properly linked.
 
-# Demo 
-If you plan on using these demo examples in your own production project, we recommend you to clone this repository. This way, you will not be affected by the possible changes made to the Custom elements in the future.
-- ColorPicker - [https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html](https://kentico.github.io/custom-element-samples/ColorPicker/color-picker.html)
-- Markdown editor - [https://kentico.github.io/custom-element-samples/Markdown/markdown.html](https://kentico.github.io/custom-element-samples/Markdown/markdown.html)
-- CSS usage examples - [https://kentico.github.io/custom-element-samples/shared/examples.html](https://kentico.github.io/custom-element-samples/shared/examples.html)
+## Feedback & Contributing
 
-# Feedback & Contributing
+You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/kontent-custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request.
 
-You can contribute by implementing a Custom Element Extension of your choice or pick one from the [ideas](https://github.com/Kentico/custom-element-samples/issues). Create an HTML web page, include the Custom Elements API in the code, describe what your element does in the Readme file, and send us a pull request. 
+### Pull request
 
-We'll also appreciate if you [submit your ideas](https://github.com/Kentico/custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/custom-element-samples/issues).
+The pull request should include:
 
-Check out the [Contributing](https://github.com/Kentico/custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+* A screenshot file (animated or static)
+  * Must be named using PascalCase (e.g. `YourComponentName.gif`)
+  * Must be added to the [`src/data/assets` folder](src/data/assets)
+* An element information json file
+  * Must be named using PascalCase (e.g. `YourComponentName.json`)
+  * Must be added to the [`src/data/elements` folder](src/data/elements)
+  * Includes a brief description of the custom element functionality
+  * Links to your repository
+  * Use existing categories if possible
+* Your repository should include a `README.md` file containing
+  * A description of the custom element functionality
+  * A screenshot/gif showcasing the custom element
+  * Step by step instructions how to add custom element to the Kentico Kontent UI
+  * Configuration description example
+  * Example of the output in the Delivery Response
+  * If possible, a "Deploy to Netlify" button to make it easy to get started ([e.g. Deploying section of SimpleMDE Markdown Editor](https://github.com/Kentico/kontent-custom-element-simplemde-markdown-editor#deploying))
+* We no longer accept code submitted to this repository. It is only intended to act as a guidepost or collection of references to other codebases
 
-# Custom Elements Contest 2019
+#### Sample element JSON
 
-**UPDATE: We are pushing the contest deadline to 14th of April! So keep up, finish your elements and create pull requests. Any pull request that makes it till midnight on 14th of April is included!**
+The element information JSON file named after your element's name in PascalCase (e.g. `YourComonentName.json`) must be placed in the [`/src/data/elements` folder](/src/data/elements) with the following format:
 
-We all like to play! During the March of 2019 we are hosting the Custom Elements Contest 2019. Do you have what it takes to code an awesome Custom Element and compete with others for $150 Amazon vouchers? Then take a look at these few rules we've put together:
+```json
+{
+  "title": "Your Component Name",
+  "description": "Short description of your element's purpose and functionality.",
+  "thumbnailUrl": "../assets/YourComponentName.(gif|png|jpg)",
+  "readmeUrl": "https://github.com/<YourGitHub>/<YourCustomElementRepoName>",
+  "categories": [
+    "Other"
+  ]
+}
+```
 
-* The contest runs between 1st and 31st of March 2019 (**UPDATE: contest deadline pushed to 14th of April 2019**)
-* Every extension submitted between these dates is automatically included in the contest
-* Every extension must comply with all applicable licenses
-* Every extension must be submitted only by its author
-* Every submission (pull request) must follow these rules:
-  * extension is stored within a folder named after it
-  * the folder contains compiled and minimized code of the custom element extension (html, css, js) and markdown file with documentation (how to set it up, etc.)
-  * the documentation must contain a link to the source code repository (if there is any) of the custom element extension
-  * the source code is licensed under MIT
-* Prize for top 10 winning custom element extensions is $150 Amazon voucher. Winning authors who are non-US residents will be eligible to claim a virtual visa card to the same value.
-* Every custom element extension will be evaluated in following areas:
-  * innovation/originality - does the extension use some new concepts, is it somehow different from what we are used to?
-  * usefulness - is it an extension to be used by many users or is meant for a very specific, niche segment?
-  * complexity - is it a prefilled drop-down list vs. complex selection dialog with plenty of JS logic
-  * quality - is it bug-free?
-* Custom element extensions will be evaluated by Kentico internal committee after the end of the contest
-* Ideas for custom element extensions may be optionally picked from our list at https://github.com/Kentico/custom-element-samples/issues
+### Ideas
 
-## How to contribute to the repository and be included in the contest?
+We'd also appreciate if you [submit your ideas](https://github.com/Kentico/kontent-custom-element-samples/issues) for custom elements or vote for [the existing ones](https://github.com/Kentico/kontent-custom-element-samples/issues).
 
-* Pull requests are to be submitted to https://github.com/Kentico/custom-element-samples
-* Every custom element extension submitted between 1st and 31st of March 2019 is automatically included in the contest
-* If you are working on a custom element extension based on an idea from our list, let us know via GitHub issues and we will assign the issue to you. (**UPDATE: contest deadline pushed to 14th of April 2019**)
-
-## Winners
-If your custom element extension will place in the top 10, we will get in touch with you via GitHub to collect your contact info so that you can receive your prize. Please make sure your GitHub contact info is current.
-
-If you have any questions regarding the Custom Elements Contest 2019, please [get in touch with us](mailto:developerscommunity@kentico.com).
-
-
+Check out the [Contributing](https://github.com/Kentico/kontent-custom-element-samples/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
 
 ![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/custom-element-samples?pixel)

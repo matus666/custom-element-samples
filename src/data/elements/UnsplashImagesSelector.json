@@ -1,0 +1,9 @@
+{
+  "title": "Unsplash Images Selector",
+  "description": "This is a custom element for Kentico Kontent that allows users to search and select high-quality, royalty-free images from Unsplash.",
+  "thumbnailUrl": "../assets/UnsplashImagesSelector.jpg",
+  "readmeUrl": "https://github.com/ChristopherJennings/kontent-custom-element-unsplash-element",
+  "categories": [
+    "Images"
+  ]
+}

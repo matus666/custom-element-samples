@@ -1,0 +1,9 @@
+{
+  "title": "Font Awesome Icon Codename Selector",
+  "description": "Custom element allowing to pick Font Awesome icon. Custom element stores the value as icon's codename.",
+  "thumbnailUrl": "../assets/FontAwesomeIconCodenameSelector.gif",
+  "readmeUrl": "https://github.com/Simply007/kontent-custom-element-font-awesome-selector-codename",
+  "categories": [
+    "Icons"
+  ]
+}

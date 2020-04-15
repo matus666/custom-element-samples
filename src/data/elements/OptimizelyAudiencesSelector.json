@@ -1,0 +1,9 @@
+{
+  "title": "Optimizely Audience Selector",
+  "description": "Optimizely audiences selector is a selector connected to Optimizely API which allows users to search and select audiences from the Optimizely.",
+  "thumbnailUrl": "../assets/OptimizelyAudiencesSelector.gif",
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-sample-optimizely",
+  "categories": [
+    "Other"
+  ]
+}

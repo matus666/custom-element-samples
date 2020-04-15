@@ -1,0 +1,19 @@
+html {
+  overflow-y:scroll;
+}
+
+.input--cesg {
+  border: 1px solid #757575;
+  margin: 0;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.input--cesg:focus {
+  border-color: #f05a22;
+}
+
+.input--cesg:focus ~ .label,
+.input--cesg.js-filled ~ .label {
+  color: #231f20;
+}

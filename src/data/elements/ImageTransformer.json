@@ -1,0 +1,9 @@
+{
+  "title": "Image transformer",
+  "description": "This custom element functions similarly to the Asset element, but allows an editor to apply the Image Transformation API to any selected image.",
+  "thumbnailUrl": "../assets/ImageTransformer.gif",
+  "readmeUrl": "https://github.com/yuriys-kentico/TransformedImagesElement",
+  "categories": [
+    "Images"
+  ]
+}

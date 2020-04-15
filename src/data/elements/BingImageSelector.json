@@ -1,0 +1,9 @@
+{
+  "title": "Bing Image Selector",
+  "description": "The Bing image selector allows to search images on Bing and select one. Note: selected image may be subject to copyright and/or usage restrictions",
+  "thumbnailUrl": "../assets/BingImageSelector.gif",
+  "readmeUrl": "https://github.com/Kentico/kontent-custom-element-bing-image-selector",
+  "categories": [
+    "Images"
+  ]
+}
